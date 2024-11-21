@@ -1,4 +1,17 @@
-
+'''
+Given a word W made from letters of the English alphabet, determine if it follows the rules of
+toki pona phonotactics.
+In toki pona phonotactics, words are made of one or more valid syllables. All valid syllables
+follow a (C)V(n) structure: an optional consonant, followed by a mandatory vowel, followed by
+an optional n. Consonants and vowels are single letters from the toki pona alphabet.
+The toki pona alphabet only has 14 letters and is a subset of the English alphabet. These are:
+● The consonants m, n, p, t, k, s, w, j, l (n is a consonant, as well as an optional ending)
+● The vowels a, e, i, o, u
+Finally, words must not contain any of these contiguous illegal sequences (including between
+syllables):
+● wu, wo, ji, ti, nn, or nm
+● Adjacent vowels such as aa, ei, uo, aoi, etc.
+'''
 def solve(S: str) -> str:
    #struc = optional cons, mandatory vow, optional n
     wordContained = lambda s, l: any(map(lambda x: x in s, l))  
