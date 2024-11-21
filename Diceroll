@@ -1,3 +1,13 @@
+'''
+Given N sides of a fair die labeled with the numbers X1
+, X2, … , XN on each face, find a
+number x you can “zero out” to minimize the amount you’ll pay Jennifert per dice roll, on
+average. The faces of the die are not necessarily unique. When you roll the die, the number Xi
+that appears face-up causes you to pay Jennifert Xi dollars—unless Xi equals your chosen x,
+in which case you don’t have to pay her any money (haha, sucker). A die being fair means that
+each face has an equal probability of appearing face-up when the die is rolled.
+'''
+
 def solve(N: int, X: list[int]) -> int:
     from collections import Counter
     #N: the number of faces on the die
